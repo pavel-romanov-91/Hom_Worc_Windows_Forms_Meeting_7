@@ -1,4 +1,4 @@
-using System.Text;
+Ôªøusing System.Text;
 
 namespace Hom_Worc_Windows_Forms_Meeting_7
 {
@@ -51,10 +51,10 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             leftToolStripMenuItem.Click += LeftToolStripMenuItem_Click;
             tabToolStripMenuItem.Click += TabToolStripMenuItem_Click;
 
-            ÒlearToolStripMenuItem.Click += —learToolStripMenuItem_Click;
+            —ÅlearToolStripMenuItem.Click += –°learToolStripMenuItem_Click;
 #pragma warning restore CS8622
         }
-        private void —learToolStripMenuItem_Click(object sender, EventArgs e)
+        private void –°learToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Refresh();
         }
@@ -163,7 +163,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
                 }
                 catch (Exception exception)
                 {
-                    MessageBox.Show($"{exception.Message}", "Œ¯Ë·Í‡", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"{exception.Message}", "–û—à–∏–±–∫–∞", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -204,7 +204,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             {
                 Refresh();
             }
-            lineLabel.Text = $"CÚÓÍ:{richTextBox.Lines.Length} | —ËÏ‚ÓÎÓ‚:{richTextBox.Text.Length}";
+            lineLabel.Text = $"C—Ç—Ä–æ–∫:{richTextBox.Lines.Length} | –°–∏–º–≤–æ–ª–æ–≤:{richTextBox.Text.Length}";
 
             undoToolStripItem.Enabled = richTextBox.CanUndo;
             undoToolStripMenuItem.Enabled = richTextBox.CanUndo;
@@ -254,7 +254,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"{exception.Message}", "Œ¯Ë·Í‡", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{exception.Message}", "–û—à–∏–±–∫–∞", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Refresh();
             }
         }
@@ -299,7 +299,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"{exception.Message}", "Œ¯Ë·Í‡", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{exception.Message}", "–û—à–∏–±–∫–∞", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Refresh();
             }
         }
@@ -330,7 +330,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"{exception.Message}", "Œ¯Ë·Í‡", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{exception.Message}", "–û—à–∏–±–∫–∞", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Refresh();
             }
         }
@@ -347,7 +347,7 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
             }
             catch (Exception exception)
             {
-                MessageBox.Show($"{exception.Message}", "Œ¯Ë·Í‡", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"{exception.Message}", "–û—à–∏–±–∫–∞", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Refresh();
             }
         }
@@ -355,13 +355,13 @@ namespace Hom_Worc_Windows_Forms_Meeting_7
         {
             try
             {
-                string[] dirs = Directory.GetDirectories(path);//‰Ó·‡‚ÎˇÂÏ + ÂÒÎË ÂÒÚ¸ Ô‡ÔÍË
+                string[] dirs = Directory.GetDirectories(path);//–¥–æ–±–∞–≤–ª—è–µ–º + –µ—Å–ª–∏ –µ—Å—Ç—å –ø–∞–ø–∫–∏
                 foreach (string dir in dirs)
                 {
                     TreeNode dirNode = new TreeNode(dir.Remove(0, dir.LastIndexOf("\\") + 1));
                     driveNode.Nodes.Add(dirNode);
                 }
-                string[] files = Directory.GetFiles(path);//‰Ó·‡‚ÎˇÂÏ + ÍÓ„‰‡ ÌÂÚ Ô‡ÔÓÍ, ‡ ÂÒÚ¸ ÚÓÎ¸ÍÓ Ù‡ÈÎ˚
+                string[] files = Directory.GetFiles(path);//–¥–æ–±–∞–≤–ª—è–µ–º + –∫–æ–≥–¥–∞ –Ω–µ—Ç –ø–∞–ø–æ–∫, –∞ –µ—Å—Ç—å —Ç–æ–ª—å–∫–æ —Ñ–∞–π–ª—ã
                 foreach (string file in files)
                 {
                     TreeNode fileNode = new TreeNode(new DirectoryInfo(file).Name);
